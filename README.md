@@ -12,13 +12,13 @@ Kelompok 3 Analisis dan Desain Sistem P3
 
 
 ## Deskripsi Aplikasi
-
+Aplikasi yang kami buat merupakan web commerce guna membantu pelaku umkm dibidang fasahion untuk menjajakan produknya secara digital dan melakukan transaksi secara online agar mampu meningkatkan daya saing dan daya jual dari umkm. Aplikasi ini berfokus untuk menampilkan katalog produk dan juga melakukan order melalui laman web.
 
 ## Latar Belakang
-
+Pemerintah Indonesia melalui pernyataan Presiden Indonesia Joko Widodo menargetkan 30 juta pelaku usaha mikro kecil dan menengah dapat bertransformasi dan menjajakan produknya melalui platform digital pada tahun 2024. Pada tahun 2023, pemerintah menargetkan setidaknya sudah ada 23 juta pelaku umkm yang menggunakan platform digital. Mendukung program pemerintah tersebut, maka tim kami menyepakati untuk menyelesaikan tugas proyek akhir mata kuliah analisis dan desain sistem untuk membentuk platform digital e-commerce dari pelaku umkm dibidang fashion yaitu limaawaktu.
 
 ## Tujuan
-
+Pembuatan aplikasi web commerce ini guna memenuhi tugas akhir mata kuliah analisis dan desain sistem serta membantu target pemerintah dalam meningkatkan digitalisasi pelaku umkm
 
 ## User Story
 | No. | Aktor | User Story | Acceptance Criteria |
