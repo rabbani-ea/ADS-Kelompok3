@@ -1,0 +1,290 @@
+/* Color1 = F4EEE0
+Color2 = 6D5D6E
+Color3 = 4F4557
+Color4 = 393646
+Button = F47458 */
+
+/* Font & icon */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo Black';
+}
+
+p, i {
+    font-family: 'Poppins';
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+/*--------------------------------------------------------------
+# Sign In - Sign Up
+--------------------------------------------------------------*/
+#logsin h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+#logsin h3 {
+    font-size: 38px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#logsin input {
+    font-size: 13px;
+    padding: 4px 12px;
+    margin-bottom: 5px;
+    width: 90%;
+    border: 1px solid #FFF6F4;
+    background-color: #FFF6F4;
+    font-family: 'Poppins';
+}
+#logsin p {
+    margin-bottom: 0px;
+    color: #000;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+#logsin .btn {
+    margin-top: 15px;
+    padding:7px 25px; 
+    background: #F47458; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 20px; 
+    color: #fff;
+    font-size: smaller;
+    font-family: 'Poppins';
+}
+#logsin .btn:hover{
+    background:#9e4531;
+}
+#logsin .signin .split {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    /* padding-top: 10px; */
+}
+
+#logsin .signin .left {
+    left: -50px;
+}
+
+#logsin .signin .right {
+    right: 0;
+}
+
+#logsin .signin .centered {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    border-radius: 10px;
+    background-color: #FFF8F8;
+    padding: 30px;
+}
+#logsin .signup h3 {
+    font-size: 25px;
+}
+
+#logsin .signup .split {
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+#logsin .signup .left {
+    left: 0px;
+}
+
+#logsin .signup .right {
+    right: 0;
+    background-color: #6D5D6E;
+}
+
+#logsin .signup .centered {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FFF8F8;
+    padding: 30px;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed !important;
+    background-image: linear-gradient(#6d5d6ed4 90%, transparent);
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 10px !important;
+}
+.navbar a{
+    color: #fff;
+    font-family: 'Archivo Black';
+}
+.navbar a:hover{
+    color: #F4EEE0;
+}
+li {
+    list-style-type: none;
+}
+button.btn.btn-outline-success {
+    border: 1px #F4EEE0 solid;
+    color: #F4EEE0;
+}
+button.btn.btn-outline-success:hover {
+    background-color: #F4EEE0;
+    color: #0d1e2d;
+}
+
+/* Carousel Promo */
+#carouselExampleIndicators {
+    padding-top: 65px !important;
+    margin: 6px;
+    margin-left: auto;
+    text-align: end;
+    width: 80% !important;
+}
+.carousel-inner img{
+    width: 80% !important;
+}
+.carousel-control-next, .carousel-indicators {
+    right: 20% !important;
+}
+
+/* Katalog */
+.filters a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.filters a:hover,
+.filters a:focus,
+.filters a:active {
+    text-decoration: none;
+} 
+.filters a:hover:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    height: 1px;
+    background-color: #000;
+} 
+.filters a.active {
+    color: #000;
+} 
+.filters a.active:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    height: 1px;
+    background-color: #000;
+}
+.katalogphoto .row {
+    column-count: 4;
+}
+.card {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border-radius: 10px 10px 5px 5px !important;
+    text-align: center;
+    margin: 10px;
+}
+.card:hover {
+    transform: translateY(-10px);
+    transition-timing-function: ease-in-out;
+    transition: 0.4s;
+}
+.card a, .card a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.card-body {
+    text-align: start;
+}
+.card-body h5{
+    margin-bottom: 0px;
+}
+.item {
+    border: none;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+    padding: 1.5rem 0 3rem 0;
+    background-color: #6D5D6E;
+    border-radius: 30px 30px 0 0;
+    bottom: 0;
+    width: 100%;
+    color: #F4EEE0;
+    margin: auto;
+}
+.footer a {
+    color: #F4EEE0;
+}
+.social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    position: relative;
+    text-align: center;
+    color: #0d1e2d;
+}
+.social a span {
+    display: inline-block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.social a:hover {
+    color: #6D5D6E;
+}
+
+/* Detail Baju */
+.detail .carousel-control-next {
+    right: 0px !important;
+}
+.detail .sticky-content {
+    margin-top: 20px;
+}
+.detail h3, .detail h4 {
+    margin-bottom: 0px;
+}
+.detail .btn-co {
+    background-color: #C1DCDC;
+}
+.detail .btn-co:hover {
+    background-color: #96bdbd;
+}
+.detail .modal select option:hover {
+    background-color: #96bdbd !important;
+}
+.form-select:valid:focus {
+    box-shadow: none;
+}
