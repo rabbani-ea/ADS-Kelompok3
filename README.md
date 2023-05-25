@@ -23,8 +23,8 @@ Pembuatan aplikasi web commerce ini guna memenuhi tugas akhir mata kuliah analis
 ## User Story
 | No. | Aktor | User Story | Acceptance Criteria |
 | - | ------------- | ------------- | -
-| 1 | Customer | ------- | ----------------- |
-| 2 | Administrator | ----------- | ------------ |
+| 1 | Customer | Sebagai customer, saya ingin melihat dan membeli produk yang dijual. | Informasi produk tampil pada laman website dan bisa melakukan proses order |
+| 2 | Administrator | Sebagai pelaku UMKM di bidang fashion, saya ingin menjajakan produk saya secara daring dan memiliki laman website sendiri agar produk dapat dijangkau oleh banyak customer sehingga meningkatkan jumlah penjualan | Pelaku UMK dapat memperlihatkan katalog produknya dan bisa terjadi proses jual beli. |
 
 ## Ruang Lingkup
 Batasan-batasan yang diterapkan untuk proyek ini adalah:
