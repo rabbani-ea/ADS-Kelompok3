@@ -57,7 +57,7 @@
         </div>
     </nav>
 
-    <div class="container"style="margin-top: 65px; /*background-color: #C1DCDC; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 3px; padding: 10px;*/">
+    <div class="container" style="margin-top: 65px; margin-bottom: max(8%,0px); /*background-color: #C1DCDC; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 3px; padding: 10px;*/">
         <div class="detail" style="/*background-color: #ffffff; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 3px;*/">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-4" data-aos="fade-up">
@@ -151,14 +151,15 @@
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Nama Baju</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Pilih varian</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select id="inputState" class="form-select">
+                    <option selected>Varian </option>
+                    <option>Black </option>
+                    <option>broken White </option>
+                    <option>Green Wood </option>
+                    <option>softgrey </option>
                 </select>
             </div>
             <div class="modal-footer">
@@ -169,7 +170,7 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="footer" role="contentinfo" style="position: absolute;">
+    <footer class="footer" role="contentinfo">
         <div class="container">
         <div class="row">
             <div class="col-sm-6">

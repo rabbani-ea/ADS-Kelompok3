@@ -288,3 +288,80 @@ button.btn.btn-outline-success:hover {
 .form-select:valid:focus {
     box-shadow: none;
 }
+
+/* Profile */
+.profile .row .col-md-3{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.profile .row .col-md-3 .col-12 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile .row .col-md-3 .col-12 a{
+    background-color: #C1DCDC;
+}
+.profile .row .col-md-3 .col-12 a:hover{
+    background-color: #96bdbd !important;
+}
+
+/* Edit Profile */
+.profile .row .col-md-3 .col-12 .btn-co, button.btn.btn-co{
+    background-color: #C1DCDC;
+}
+.profile .row .col-md-3 .col-12 .btn-co:hover, button.btn.btn-co:hover{
+    background-color: #96bdbd !important;
+}
+
+/* Checkout */
+td {
+    text-align: center;
+}
+td.deskripsi {
+    text-align: start;
+    width: 50%;
+}
+td.deskripsi .form-label{
+    margin-bottom: 2px;
+}
+i.bi.bi-trash3-fill {
+    cursor: pointer;
+}
+i.bi.bi-trash3-fill:hover {
+    color: #F47458;
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    display: none;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4f45577e;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3936467d;
+}
+
+select#inputState:focus, input#typeNumber:focus {
+    box-shadow: 0 0 0 2px #96bdbd;
+    outline: 2px solid #96bdbd;  
+}
+select#inputState option:default {
+    background-color: #96bdbd;
+}
+select#inputState.visited, input#typeNumber.visited {
+    outline: 2px solid #96bdbd;
+}
