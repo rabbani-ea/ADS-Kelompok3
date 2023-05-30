@@ -2,47 +2,41 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Colors</h1>
+		<h1>Subscriber</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="color-add.php" class="btn btn-primary btn-sm">Add New</a>
+		<a href="subscriber-remove.php" class="btn btn-primary btn-sm">Remove Pending Subscribers</a>
+		<a href="subscriber-csv.php" class="btn btn-primary btn-sm">Export as CSV</a>
 	</div>
 </section>
 
 
 <section class="content">
-
   <div class="row">
     <div class="col-md-12">
-
-
-      <div class="box box-info">
-        
+      <div class="box box-info">        
         <div class="box-body table-responsive">
           <table id="example1" class="table table-bordered table-hover table-striped">
 			<thead>
 			    <tr>
 			        <th>#</th>
-			        <th>Color Name</th>
+			        <th>Subscriber Email</th>
 			        <th>Action</th>
 			    </tr>
 			</thead>
             <tbody>
             	<?php
             	$i=0;
-            	$statement = $pdo->prepare("SELECT * FROM tbl_color ORDER BY color_id ASC");
+            	$statement = $pdo->prepare("SELECT * FROM tbl_subscriber WHERE subs_active=1");
             	$statement->execute();
-            	$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
+            	$result = $statement->fetchAll(PDO::FETCH_ASSOC);
             	foreach ($result as $row) {
             		$i++;
             		?>
 					<tr>
 	                    <td><?php echo $i; ?></td>
-	                    <td><?php echo $row['color_name']; ?></td>
-	                    <td>
-	                        <a href="color-edit.php?id=<?php echo $row['color_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-	                        <a href="#" class="btn btn-danger btn-xs" data-href="color-delete.php?id=<?php echo $row['color_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
-	                    </td>
+	                    <td><?php echo $row['subs_email']; ?></td>
+	                    <td><a href="#" class="btn btn-danger btn-xs" data-href="subscriber-delete.php?id=<?php echo $row['subs_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
 	                </tr>
             		<?php
             	}
