@@ -27,7 +27,7 @@ Pembuatan aplikasi web commerce ini guna memenuhi tugas akhir mata kuliah analis
 | 2 | Administrator | Sebagai pelaku UMKM di bidang fashion, saya ingin menjajakan produk saya secara daring dan memiliki laman website sendiri agar produk dapat dijangkau oleh banyak customer sehingga meningkatkan jumlah penjualan | Pelaku UMK dapat memperlihatkan katalog produknya dan bisa terjadi proses jual beli. |
 
 ## Use Case Diagram
-![](Diagram/Use Case Diagramm .png)
+![Use Case Diagram - E-Commerce LIMAAWAKTU](Diagram/UseCaseDiagramm.png)
 
 ## Activity Diagram
 ### Make Order
@@ -35,22 +35,22 @@ Pembuatan aplikasi web commerce ini guna memenuhi tugas akhir mata kuliah analis
 ### Make Payment
 ![2](Diagram/Bayar.png)
 ### Manage Product
-![3](Diagram/Manage Product.png)
+![3](Diagram/ManageProduct.png)
 ### Manage Order
-![4](Diagram/Manage Payment.png)
+![4](Diagram/ManagePayment.png)
 
 ## Sequence Diagram
 ### Make Order
-![](Diagram/Sequence Make Order.png)
+![Sequence - Make Order](Diagram/SequenceMakeOrder.png)
 ### Make Payment
-![](Diagram/Sequence Make Payment.png)
+![Sequence - Make Payment](Diagram/SequenceMakePayment.png)
 ### Manage Product
-![](Diagram/Sequence Manage Product.png)
+![Sequence - Manage Product](Diagram/SequenceManageProduct.png)
 ### Manage Order
-![](Diagram/Sequence Manage Order.png)
+![Sequence - Manage Order](Diagram/SequenceManageOrder.png)
 
 ## Class Diagram
-![](Diagram/Class Diagram.png)
+![Class Diagram - E-Commerce LIMAAWAKTU](Diagram/ClassDiagram.png)
 
 ## Testing Report
 #### Class Name : Admin
