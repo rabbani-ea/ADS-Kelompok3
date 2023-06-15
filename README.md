@@ -26,30 +26,114 @@ Pembuatan aplikasi web commerce ini guna memenuhi tugas akhir mata kuliah analis
 | 1 | Customer | Sebagai customer, saya ingin melihat dan membeli produk yang dijual. | Informasi produk tampil pada laman website dan bisa melakukan proses order |
 | 2 | Administrator | Sebagai pelaku UMKM di bidang fashion, saya ingin menjajakan produk saya secara daring dan memiliki laman website sendiri agar produk dapat dijangkau oleh banyak customer sehingga meningkatkan jumlah penjualan | Pelaku UMK dapat memperlihatkan katalog produknya dan bisa terjadi proses jual beli. |
 
-## Ruang Lingkup
-Batasan-batasan yang diterapkan untuk proyek ini adalah:
+## Use Case Diagram
+![Use Case Diagram - E-Commerce LIMAAWAKTU](Diagram/Use Case Diagramm .png)
 
-## Lingkungan Pengembangan
+## Activity Diagram
+### Make Order
+![1](Diagram/Checkout.png)
+### Make Payment
+![2](Diagram/Bayar.png)
+### Manage Product
+![3](Diagram/Manage Product.png)
+### Manage Order
+![4](Diagram/Manage Payment.png)
 
-## Metodologi
+## Sequence Diagram
+### Make Order
+![Sequence - Make Order](Diagram/Sequence Make Order.png)
+### Make Payment
+![Sequence - Make Payment](Diagram/Sequence Make Payment.png)
+### Manage Product
+![Sequence - Manage Product](Diagram/Sequence Manage Product.png)
+### Manage Order
+![Sequence - Manage Order](Diagram/Sequence Manage Order.png)
 
-## Research Plan
-### Empathy Map
-### Customer Journey
-### User Persona
+## Class Diagram
+![Class Diagram - E-Commerce LIMAAWAKTU](Diagram/Class Diagram.png)
 
-## System Analysis
-### Use Case Diagram
-### Activity Diagram
-### ERD
-### Class Diagram
+## Testing Report
+#### Class Name : Admin
+#### Testing Scenario: Manage Product
+<table>
+  <thead>
+      <th>Method Name</th>
+      <th>Input</th>
+      <th>Expected Output</th>
+      <th>Actual Output</th>
+      <th>Results</th>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Add Product</td>
+      <td>Nama Produk : Zayn Thobe <br/> warna tersedia : gray <br/> Ukuran tersedia : s, m, l, xl <br/> jumlah stok : 100 </td>
+      <td>
+        <li> produk berhasil ditambahkan </li>
+        <li> produk muncul pada katalog </li>
+      </td>
+      <td>produk berhasil ditambahkan dan muncul pada katalog</td>
+      <td>passed</td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td>Nama Produk : Azkal Thobe <br/> warna tersedia : black <br/> Ukuran tersedia : s, m, l, xl <br/> jumlah stok : 100 </td>
+      <td>
+        <li> produk berhasil ditambahkan </li>
+        <li> produk muncul pada katalog </li>
+      </td>
+      <td>produk berhasil ditambahkan dan muncul pada katalog</td>
+      <td>passed</td>
+    </tr> 
+    <tr>
+      <td></td>
+      <td>Nama Produk : Kemko <br/> warna tersedia : white <br/> Ukuran tersedia : s, m, l, xl <br/> jumlah stok : 100 </td>
+      <td>
+        <li> produk berhasil ditambahkan </li>
+        <li> produk muncul pada katalog </li>
+      </td>
+      <td>produk berhasil ditambahkan dan muncul pada katalog</td>
+      <td>passed</td>
+    </tr>
+</table> 
 
-## Prototype
-
-## Link Video Demo
-
-## Link Aplikasi
-
-## Testing
-
-## Documents
+#### Class Name : Customer
+#### Testing Scenario: Login, Add product to cart, payment
+<table>
+  <thead>
+      <th>Method Name</th>
+      <th>Input</th>
+      <th>Expected Output</th>
+      <th>Actual Output</th>
+      <th>Results</th>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>Login()</td>
+      <td>Memasukkan loginID dan password </td>
+      <td>
+        Login berhasil
+      </td>
+      <td>Login berhasil</td>
+      <td>passed</td>
+    </tr> 
+    <tr>
+      <td>AddToCart()</td>
+      <td>memilih dan klik katalog yang ingin dibeli, pilih ukuran, warna, dan jumlah. klik add to cart</td>
+      <td>
+        berhasil menambahkan produk kedalam cart (keranjang)
+      </td>
+      <td>berhasil menambahkan produk kedalam cart</td>
+      <td>passed</td>
+    </tr> 
+    <tr>
+      <td>Payment</td>
+      <td>klik proceed to checkout pada cart, pilih metode payment, klik pay Now </td>
+      <td>
+        proses payment berhasil dilakukan
+      </td>
+      <td>data terekam, payment berhasil dilakukan</td>
+      <td>passed</td>
+    </tr>
+</table> 
